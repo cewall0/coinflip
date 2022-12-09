@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 250px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+}
+
+.scoreBox {
+    background-color: darkgrey;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.btn-margin {
+    margin-bottom: 15px;
+}
+
+.spin {
+    animation-name: rotation;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 4;
+    animation-fill-mode: backwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+    50% {
+        transform: rotate3d(1, 0, 0, 180deg);
+    }
+    100% {
+        transform: rotate3d(1, 0, 0, 360deg);
+    }
+}
